@@ -1,0 +1,75 @@
+# Web3 Wallet - Metamask Benzeri Cüzdan
+
+## Proje Genel Bakış
+
+Web3 Wallet, modern web3 uygulamaları için geliştirilmiş, en güncel React ve Ethers.js sürümleri kullanılarak oluşturulmuş bir cüzdan uygulamasıdır. Uygulama; token okuma, token fiyatlandırma (örneğin Coingecko API entegrasyonu aracılığıyla), kullanıcı girişi ve kayıt işlemleri gibi özelliklerin yanı sıra, büyük ekran ve tabletlerde optimize edilmiş responsive tasarım sunar.
+
+---
+
+## Özellikler
+
+- **Token Okuma:**  
+  Kullanıcının cüzdanındaki ERC20 (ve diğer) token bakiyelerini okuma imkanı.
+
+- **Token Fiyatlandırma:**  
+  Güncel token fiyatlarını, Coingecko veya benzeri online servisler üzerinden çekme özelliği.
+
+- **Kullanıcı Girişi ve Kayıt:**  
+  Güvenli kullanıcı kimlik doğrulama ve kayıt işlemleri.
+
+- **Responsive Tasarım:**  
+  Büyük ekran, tablet ve mobil cihazlarda optimize edilmiş kullanıcı arayüzü.
+
+- **Temiz Kod & JSDoc:**  
+  Temiz kod prensiplerine uygun, her fonksiyonda detaylı JSDoc açıklamaları (Türkçe) kullanılacaktır.
+
+- **Test Kapsamı:**  
+  Birim testleri ile %80 ve üzeri test coverage hedeflenmektedir.
+
+---
+
+## Teknoloji Yığını
+
+- **React (En Güncel Sürüm):** Modern kullanıcı arayüzleri geliştirmek için.
+- **Ethers.js (En Güncel Sürüm):** Blockchain ile etkileşim ve token işlemleri için.
+- **API Entegrasyonu:** Token fiyatlandırma gibi özellikler için Coingecko veya benzeri API’ler kullanılacaktır.
+- **State Management:** React Context API veya Redux tercih edilebilir.
+- **Test Araçları:** Jest ve React Testing Library ile kapsamlı birim testleri.
+
+---
+
+## Proje Yönergeleri
+
+### Dil
+- Projede yalnızca Türkçe kullanılacaktır.
+- Kod yorumları Türkçe olarak yazılacaktır.
+
+### Kod Stili
+- Temiz kod prensipleri uygulanacaktır.
+- Her fonksiyon için JSDoc açıklamaları kullanılacaktır.
+
+### Dokümantasyon
+- README ve API dokümantasyonu detaylı ve Türkçe olarak hazırlanacaktır.
+
+### Test
+- Birim testleri zorunludur.
+- Test coverage minimum %80 olarak hedeflenmiştir.
+
+---
+
+
+### Kod Yapısı
+
+web3-wallet-extension(bu kök klasör)/
+├── public/              # Public assets (resimler, favicon, vs.) / Public assets (images, favicon, etc.)
+├── src/
+│   ├── components/      # Yeniden kullanılabilir React bileşenleri / Reusable React components
+│   ├── contexts/        # State yönetimi için React Context API / React Context API for state management
+│   ├── services/        # Ethers.js ve API servisleri (ör. token fiyatlandırma) / Ethers.js and API services (e.g., token pricing)
+│   ├── views/           # Sayfa bileşenleri (Login, Register, Dashboard, vs.) / Page components (Login, Register, Dashboard, etc.)
+│   ├── App.jsx          # Uygulamanın ana bileşeni / Main application component
+│   ├── index.jsx        # Uygulama başlangıç noktası / Application entry point
+│   └── styles/          # CSS/SASS dosyaları / CSS/SASS files
+├── tests/               # Birim testleri / Unit tests
+├── README.md            # Proje dokümantasyonu / Project documentation
+└── package.json         # Bağımlılıklar ve betikler / Dependencies and scripts

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Web3 Wallet Extension",
+  "version": "1.0.0",
+  "description": "A secure Web3 wallet extension",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "logo.svg",
+      "48": "logo.svg",
+      "128": "logo.svg"
+    }
+  },
+  "icons": {
+    "16": "logo.svg",
+    "48": "logo.svg",
+    "128": "logo.svg"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["index.html", "assets/*"],
+    "matches": ["<all_urls>"]
+  }],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+} 
