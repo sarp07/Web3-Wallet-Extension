@@ -34,7 +34,7 @@ function RouteHandler() {
       if (!isAllowedPath) {
         console.log('Not allowed in tab view, closing...');
         // İzin verilmeyen sayfalarda popup'a yönlendir
-        window.close()
+        // window.close()
       }
     } else {
       // Popup view'da get-started sayfasına erişimi engelle
